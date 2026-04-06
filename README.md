@@ -105,9 +105,9 @@ resultado de la ejecución de los tests unitarios.
 #### Código desarrollado
 
 Inserte a continuación el código de los métodos desarrollados en esta tarea, usando los
-comandos necesarios para que se realice el realce sintáctico en Python del mismo (no
-vale insertar una imagen o una captura de pantalla, debe hacerse en formato *markdown*).
+comandos necesarios para que se realice el realce sintáctico en Python del mismo.
 
+```python
 class Vector:
     """
     Clase que representa un vector n-dimensional con operaciones sobrecargadas.
@@ -151,7 +151,8 @@ class Vector:
         Sobrecarga del operador % (Componente normal o perpendicular).
         Calcula el resto de la proyección.
         """
-        return Vector([a - b for a, b in zip(self.elementos, (self // other).elementos)])
+        v_paralelo = self // other
+        return Vector([a - b for a, b in zip(self.elementos, v_paralelo.elementos)])
 
         
 #### Subida del resultado al repositorio GitHub y *pull-request*
