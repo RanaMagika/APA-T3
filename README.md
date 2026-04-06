@@ -153,6 +153,7 @@ class Vector:
         """
         v_paralelo = self // other
         return Vector([a - b for a, b in zip(self.elementos, v_paralelo.elementos)])
+```
 
         
 #### Subida del resultado al repositorio GitHub y *pull-request*
